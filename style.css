@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+#svg-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.owl-item {
+  position: relative;
+}
+
+/* Holder of paths objects */
+.svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Objects made in svg polygon */
+.svg path {
+  opacity: 0.6;
+}
+
+.svg path:hover {
+  opacity: 0.8;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+/*  */
+.popup-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 180px;
+  margin: auto;
+  padding: 10px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  z-index: 3;
+}
+
+/* The Close Button */
+#close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
